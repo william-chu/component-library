@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* Component Styles */
+.blog-list-container {
+  background: #d4d4d4;
+}
+.blog-list-rail {
+  max-width: 600px;
+  display: block;
+  margin: auto;
+  padding: 0 30px;
+  background: #fff;
+}
+.blog-list-page-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 10px;
+}
+.blog-list-page-nav a {
+  transition: .5s;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.blog-list-page-nav a:first-of-type {
+  color: #fff;
+  background-color: #3c3c3c;
+  border: 1px solid #3c3c3c;
+  margin-right: 5px;
+}
+.blog-list-page-nav a:first-of-type:hover {
+  color: #3c3c3c;
+  background-color: #fff;
+  border: 1px solid #3c3c3c;
+}
+.blog-list-page-nav a:last-of-type {
+  color: #3c3c3c;
+  background-color: #fff;
+  border: 1px solid #3c3c3c;
+}
+.blog-list-page-nav a:last-of-type:hover {
+  color: #fff;
+  background-color: #3c3c3c;
+}
+.blog-list-item {
+  border-bottom-right-radius: 3px;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 0 0 20px 0;
+  margin-bottom: 30px;
+}
+.blog-list-item:last-of-type {
+  margin-bottom: 0;
+}
+.blog-list-date {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #3c3c3c;
+}
+.blog-list-title {
+  margin: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #7bcc7b;
+  padding: 10px 20px;
+  box-shadow: 4px 4px lightgreen;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: auto;
+}
+.blog-list-item p {
+  font-family: 'Montserrat', sans-serif;
+  color: #3c3c3c;
+}
+.blog-list-container a {
+  text-decoration: none;
+}
+.blog-list-link {
+  text-decoration: none;
+  background-color: #7bcc7b;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  transition: .5s;
+}
+.blog-list-link:hover {
+  background-color: lightgreen;
+}
+/* Site Specific Styles */

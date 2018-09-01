@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"');
+/* Component Styles */
+.plan-menu-container {
+  width: 100%;
+  background-color: #89d189;
+  background-position: center top;
+  padding-bottom: 30px;
+}
+.plan-menu-rail {
+  max-width: 868px;
+  display: block;
+  margin: auto;
+  padding: 0 20px;
+}
+.plan-menu-header {
+  padding: 20px 0;
+  margin: 0;
+  color: #fff;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+}
+.plan-menu-grid {
+  display: grid;
+  grid-gap: 20px;
+  justify-content: center;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px){
+  .plan-menu-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.plan-menu-item {
+  overflow: hidden;
+  min-width: 200px;
+  max-width: 375px;
+  display: block;
+  margin: auto;
+  background: #fff;
+  border: 4px solid #3c3c3c;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transform: scale(1);
+}
+.plan-menu-fade { visibility: hidden; }
+/* Prevents :hover from triggering in the gaps between items */
+
+.plan-menu-fade > * { visibility: visible; }
+/* Brings the child items back in, even though the parent is `hidden` */
+
+.plan-menu-fade > * { transition: opacity 300ms linear 200ms, transform 150ms ease-in-out 100ms; }
+/* Makes the fades smooth with a slight delay to prevent jumps as the mouse moves between items */
+
+.plan-menu-fade:hover > * { opacity: 0.6; transform: scale(0.97); }
+/* Fade out all items when the parent is hovered */
+
+.plan-menu-fade > *:hover { opacity: 1; transform: scale(1); transition-delay: 0ms, 0ms; }
+/* Fade in the currently hovered item */
+.plan-menu-image {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: auto;
+  /* creates triangle - the polygon() function takes a comma-separated list
+     of x y positions in relation to the origin 0 0 point
+     (the top-left) of the element, using those points
+     to form a line from one to the next (and from the last
+     to the first): */
+    -webkit-clip-path: polygon(50% 100%, -75% 0%, 175% 0%, 50% 100%);
+    clip-path: polygon(50% 100%, -75% 0%, 175% 0%, 50% 100%);
+}
+.plan-menu-paw {
+  position: relative;
+  margin: 0 auto 10px;
+  height: 125px;
+  width: 125px;
+}
+.plan-menu-paw svg {
+  position: absolute;
+  top: -25px;
+}
+.plan-menu-price-sign {
+  font-size: 1.4rem;
+}
+.plan-menu-price {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  font-size: 2.8rem;
+  color: #fff;
+  z-index: 10;
+  font-family: 'Montserrat', sans-serif;
+}
+.plan-menu-price-time {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8rem;
+  font-weight: bold;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: #3c3c3c;
+}
+.plan-menu-price-time em {
+  font-weight: lighter;
+  font-size: .7rem;
+}
+.plan-menu-details {
+  border-top: 1px solid #e2e2e2;
+  color: #3c3c3c;
+  margin: 20px 20px 10px;
+}
+.plan-menu-general, .plan-menu-youth, .plan-menu-senior, .plan-menu-buttons {
+  margin: 0 -20px -10px;
+  padding: 10px 20px;
+}
+.plan-menu-general {
+  background: #fff;
+}
+.plan-menu-youth {
+ background: #f7f7f7;
+}
+.plan-menu-senior {
+ background: #efefef;
+}
+.plan-menu-buttons {
+  background: #7bccc4;
+}
+.plan-menu-details-charge {
+  font-family: 'Open Sans Condensed', sans-serif;
+  /* font-weight: bold; */
+  font-size: 1.3rem;
+  margin: 0 0 5px 0;
+  letter-spacing: .2px;
+}
+.plan-menu-details-value {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: #3cb33c;
+  margin: 0 0 10px 0;
+  text-align: right;
+}
+.plan-menu-details-value em{
+  font-size: .9rem;
+}
+.plan-menu-details-value-text {
+  text-align: right;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9rem;
+  color: #3cb33c;
+  margin: 5px 0 10px;
+}
+.plan-menu-button-flex {
+  display: flex;
+  justify-content: space-around;
+}
+.plan-menu-button-detail, .plan-menu-button-select {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  transition: .5s;
+  font-weight: bold;
+  border: none;
+  margin: 10px 0;
+}
+.plan-menu-button-detail {
+  background-color: #fff;
+  color: #3c3c3c;
+}
+.plan-menu-button-detail:hover {
+  color: #fff;
+  background: #7bccc4;
+  cursor: pointer;
+}
+.plan-menu-button-select {
+  background-color: #3c3c3c;
+  color: #fff;
+}
+.plan-menu-button-select:hover {
+  background: #7bccc4;
+  cursor: pointer;
+}
+/* Site Specific Styles */

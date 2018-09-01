@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+/* Component Styles */
+.service-accordion-container {
+  background-color: #ede9e0;
+}
+.service-accordion-flex {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .service-accordion-flex {
+    flex-direction: row;
+    max-width: 900px;
+  }
+}
+.service-accordion-flex img {
+  width: 100%;
+  max-width: 450px;
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width:768px) {
+  .service-accordion-flex img {
+    margin: 0 auto auto  0;
+  }
+}
+.service-accordion-rail {
+  max-width: 400px;
+  display: block;
+  margin: auto;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .service-accordion-rail{
+    margin: 0 auto auto;
+    padding: 20px 0;
+  }
+}
+.service-accordion-container h1 {
+  font-family: 'Roboto Mono', sans-serif;
+  margin: 0 0 20px 0;
+  text-align: center;
+  color: #9b6fab;
+  border-top: 3px solid #9b6fab;
+  border-bottom: 3px solid #9b6fab;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.service-accordion-button {
+  border: none;
+  background-color: #724a80;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  padding: 5px 20px;
+  width: 100%;
+  transition: .5s;
+  text-align: center;
+}
+.service-accordion-button-active, .service-accordion-button:hover {
+  background-color: #9b6fab;
+}
+.service-accordion-button:after {
+    content: "+";
+    font-size: 1.5rem;
+    color: #fff;
+    float: right;
+}
+.service-accordion-button-active:after {
+    content: "-";
+}
+.service-accordion-details {
+  background-color: #ede9e0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-bottom: 5px;
+}
+.service-accordion-item p {
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 10px;
+}
+.service-accordion-link {
+  text-decoration: none;
+  background-color: #ede9e0;
+  border: 1px solid #724a80;
+  color: #724a80;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  transition: .5s;
+  position: relative;
+  bottom: 10px;
+}
+.service-accordion-link:hover {
+  background-color: #9b6fab;
+  border: 1px solid #9b6fab;
+  color: #fff;
+}
+/* Site Specific Styles */

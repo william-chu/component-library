@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* Component Styles */
+.menu-colorful-container {
+  padding: 40px 0;
+  background-color: #89d189;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.7'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to bottom, #7bcc7b, #89d189);
+  background-position: center bottom;
+}
+.menu-colorful-rail {
+  width: 100%;
+  max-width: 1080px;
+  display: block;
+  margin: auto;
+}
+.menu-colorful-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 0 20px;
+  justify-items: center;
+}
+@media (min-width: 950px) {
+  .menu-colorful-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.menu-colorful-link {
+  height: 275px;
+  width: 275px;
+  text-decoration: none;
+  color: #fff;
+}
+.menu-colorful-link:hover > .menu-colorful-item {
+  border-radius: 50%;
+  border: 6px solid rgba(0,0,0,.4);
+  background: rgba(0,0,0,.5);
+}
+.menu-colorful-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  transition: .6s;
+  border-radius: 20px;
+  position: relative;
+  border: 6px solid rgba(0,0,0,.2);
+}
+/* Blue */
+.menu-colorful-item1 {
+  background: #7ba3cc;
+}
+/* Red */
+.menu-colorful-item2 {
+  background: #cc7b7b;
+}
+/* Purple */
+.menu-colorful-item3 {
+  background: #967bcc;
+}
+.menu-colorful-title {
+  text-align: center;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: .3s;
+  margin-bottom: 30px;
+}
+.menu-colorful-link:hover > .menu-colorful-item > .menu-colorful-title {
+  font-size: 0;
+  color: transparent;
+  margin-bottom: 0;
+}
+.menu-colorful-icon {
+  font-size: 6rem;
+  text-align: center;
+  transition: .4s;
+}
+.menu-colorful-link:hover > .menu-colorful-item > .menu-colorful-icon {
+  color: rgba(0,0,0,.4);
+  font-size: 8rem;
+}
+.menu-colorful-text {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: .6s;
+  opacity: 0;
+  position: absolute;
+  transition: .6s;
+  margin: 0;
+}
+.menu-colorful-link:hover > .menu-colorful-item > .menu-colorful-text {
+  opacity: 1;
+}
+/* Site Specific Styles */

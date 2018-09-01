@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* Component Styles */
+.service-leaflets-container {
+  background: #89d189;
+  padding: 0 20px;
+}
+.service-leaflets-rail{
+  background: #fff;
+  padding: 20px 20px 40px 20px;
+  max-width: 1080px;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+}
+.service-leaflets-container h1 {
+  text-align: center;
+  color: #3c3c3c;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 0 0 20px;
+}
+.service-leaflets-grid {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 50px;
+  grid-template-columns: 1fr;
+  align-items: flex-start;
+}
+@media (min-width: 768px) {
+  .service-leaflets-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1080px) {
+  .service-leaflets-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.service-leaflets-item {
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+  padding: 0 15px;
+  border-bottom-right-radius: 3px;
+}
+.service-leaflets-container a {
+  text-decoration: none;
+}
+.service-leaflets-title {
+  text-align: center;
+  color: #3c3c3c;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 1px;
+  transition: .5s;
+  margin-bottom: 0;
+}
+.service-leaflets-item:hover > .service-leaflets-title {
+  color: #7bcc7b;
+}
+.service-leaflets-image {
+  box-shadow: 8px 8px lightgreen;
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  transition: .5s;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.service-leaflets-item:hover > .service-leaflets-image {
+  transform: scale(.95);
+  box-shadow: 4px 4px #7bcc7b;
+}
+.service-leaflets-item p {
+  font-family: 'Montserrat', sans-serif;
+  color: #3c3c3c;
+}
+.service-leaflets-link {
+  text-decoration: none;
+  background-color: #7bcc7b;
+  color: #fff;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  transition: .5s;
+}
+.service-leaflets-item:hover > .service-leaflets-link {
+  background-color: lightgreen;
+}
+/* Site Specific Styles */

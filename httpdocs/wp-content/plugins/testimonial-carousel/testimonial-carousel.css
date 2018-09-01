@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* Component Styles */
+.testimonial-carousel-container {
+  width: 100%;
+  background: linear-gradient(to bottom left, #5f5858, #484848);
+  padding: 30px 0;
+}
+.testimonial-carousel-container h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  color: #fff;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  padding: 0 0 10px 0;
+  border-bottom: 2px solid #fe8828;
+  margin: 0
+}
+.testimonial-carousel-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+.testimonial-carousel-arrow {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-family: 'Open Sans Condensed', sans-serif;
+  height: 40px;
+  width: 40px;
+  color: #fe8828;
+  transition: .5s;
+}
+.testimonial-carousel-arrow:hover {
+  color: #dc7623;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .testimonial-carousel-arrow {
+    height: 50px;
+    width: 50px;
+    background-color: #fe8828;
+    color: #5f5858;
+    border-radius: 50%;
+  }
+  .testimonial-carousel-arrow:hover {
+    background-color: #dc7623;
+    color: #5f5858;
+  }
+}
+.testimonial-body {
+  color: #fff;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-size: .9rem;
+  margin: auto;
+  max-width: 300px;
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+  .testimonial-body {
+    max-width: 600px;
+    font-size: 1rem;
+  }
+}
+.testimonial-author {
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.testimonial-carousel-author-img {
+  width: 100px;
+  position: relative;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  border: 2px solid #dc7623;
+}
+/* Site Specific Styles */

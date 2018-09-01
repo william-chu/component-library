@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Pragati+Narrow');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+html, body {
+  background-color: #33c0b6;
+  /* Font smoothing */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+/* Animation for home icon */
+@keyframes float {
+	0% {
+    -webkit-filter: drop-shadow(0 10px 10px rgba(0,0,0,0.4));
+  	filter: drop-shadow(0 10px 15px rgba(0,0,0,0.4));
+		transform: translatey(0px);
+	}
+	50% {
+    -webkit-filter: drop-shadow(0 10px 15px rgba(0,0,0,0.2));
+    filter: drop-shadow(0 15px 10px rgba(0,0,0,0.2));
+		transform: translatey(-20px);
+	}
+	100% {
+    -webkit-filter: drop-shadow(0 10px 10px rgba(0,0,0,0.4));
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.4));
+		transform: translatey(0px);
+	}
+}
+
+/* Header */
+
+header nav select{
+  display: block;
+  margin: 20px auto 0;
+  font-size: 1rem;
+  width: 175px;
+}
+header #brand h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-family: 'Pragati Narrow', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  margin: 20px 0 40px;
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  header #brand h1 {
+    font-size: 4rem;
+  }
+}
+header #brand h1 a {
+  color: #fff;
+  text-decoration: none;
+  transition: .5s;
+}
+
+header #brand h1 a:hover {
+  opacity: .7;
+}
+
+/* Content */
+
+.page-title {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  background color
+  font-weight: lighter;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+/* Footer */
+
+footer p {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+}
