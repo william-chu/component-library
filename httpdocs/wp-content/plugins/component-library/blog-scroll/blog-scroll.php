@@ -8,7 +8,7 @@ Version: 0.1
 function blog_scroll($atts) {
   ob_start();
   $data = shortcode_atts(array(
-    'hospital_image' => 'http://william.ivetbuilds.com/wp-content/uploads/2018/08/building.jpg'
+    'hospital_image' => 'https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/building.jpg'
   ), $atts);
   $args = array(
     'category_name' => 'News'

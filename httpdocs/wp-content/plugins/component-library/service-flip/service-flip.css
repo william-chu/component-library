@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* Component Styles */
+.service-flip-container {
+  padding: 20px 0;
+  background: #ede9e0;
+}
+.service-flip-rail {
+  width: 100%;
+  max-width: 1080px;
+  display: block;
+  margin: auto;
+}
+.service-flip-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 0 20px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+}
+@media (min-width: 560px) {
+  .service-flip-grid {
+    grid-template-columns: 1fr 1fr;
+    max-width: 520px;
+  }
+}
+@media (min-width: 1080px) {
+  .service-flip-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: none;
+  }
+}
+.service-flip-link {
+  text-decoration: none;
+  height: 300px;
+  width: 300px;
+}
+@media (min-width: 560px) {
+  .service-flip-link {
+    height: 250px;
+    width: 250px;
+  }
+}
+.service-flip-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  transition: .6s;
+  position: relative;
+}
+.service-flip-title {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  color: #fff;
+  padding: 5px 0;
+  background: rgba(116,150,196,0.85);
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: .6s .3s;
+}
+.service-flip-text {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9rem;
+  letter-spacing: inherit;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.service-flip-card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all .7s ease-in-out;
+}
+.service-flip-item:hover > .service-flip-card {
+  transform: rotateY(180deg);
+}
+.service-flip-item:hover > .service-flip-card > .side > .service-flip-title {
+  opacity: 0;
+}
+.service-flip-card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+.service-flip-card .side img {
+  width: 100%;
+}
+.service-flip-card .back {
+  background: #7496c4;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+/* Site Specific Styles */

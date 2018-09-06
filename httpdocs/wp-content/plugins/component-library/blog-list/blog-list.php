@@ -31,7 +31,7 @@ function blog_list($atts) {
     <div>
       <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
       <div class="blog-list-item">
-        <a href="<?php the_permalink(); ?>"><h2 class="blog-list-title"><?php the_title(); ?></h2></a>
+        <a class="blog-list-title-link" href="<?php the_permalink(); ?>"><h2 class="blog-list-title"><?php the_title(); ?></h2></a>
         <h1 class="blog-list-date"><?php the_date(); ?></h1>
         <p><?php remove_filter( 'the_excerpt', 'wpautop' ); the_excerpt(); ?></p>
         <a class="blog-list-link" href="<?php the_permalink(); ?>">Read More</a>

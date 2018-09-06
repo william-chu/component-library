@@ -1,30 +1,41 @@
 <?php
 /*
 Plugin Name: Plan Menu
-Description: Shows membership plans for pets, images should be 2 x 1 width and height
+Description: Shows membership plans for pets, images should be 2 x 1 width and height, chart takes the services array and then adds symbol to the plan chart based on the yes and no array for each plan.
 Author: William Chu
 Version: 0.1
 */
 function plan_menu($atts) {
   ob_start();
+  wp_enqueue_script( 'PMscripts',  plugin_dir_url( __FILE__ ) . '/plan-menu.js', array( 'jquery' ) );
   $data = shortcode_atts(array(
     'headline' => 'Select Your Plan',
-    'cat_image' => 'http://william.ivetbuilds.com/wp-content/uploads/2018/08/pet-plan-cat.jpg',
-    'dog_image' => 'http://william.ivetbuilds.com/wp-content/uploads/2018/08/pet-plan-dog.jpg',
+    'cat_image' => 'https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/pet-plan-cat.jpg',
+    'dog_image' => 'https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/pet-plan-dog.jpg',
     'cat_plan_price' => '10',
     'dog_plan_price' => '12',
+    'plus_plan_premium' => '12',
+    'elite_plan_premium' => '18',
     'enrollment_fee' => '79',
     'microchip_fee' => '49',
     'senior_fee' => '10',
     'youth_fee' => '36',
     'youth_services' => 'receive two dewormings<br>for hook & roundworms',
-    'cat_plan_detail_link' => '#1',
-    'cat_plan_select_link' => '#2',
-    'dog_plan_detail_link' => '#3',
-    'dog_plan_select_link' => '#4',
+    'cat_plan_select_link' => '#catselect',
+    'dog_plan_select_link' => '#dogselect',
+    'cat_plan_services' => 'Exam ($10 copay), FVRCP (Distemper), FeLV Vaccine, Rabies Vaccine, Yearly Parasite Test, Yearly Bloodwork, Toe Nail Trim (4 per year), Blood Pressure',
+    'cat_basic_service' => 'yes, yes ,yes, yes, no, no, no, no',
+    'cat_plus_service' => 'yes, yes, yes, yes, yes, yes, no, no',
+    'cat_elite_service' => 'yes, yes, yes, yes, yes, yes, yes, yes',
+    'dog_plan_services' => 'Exam ($10 copay), DHP (Distemper), Parvo Vaccine, Lepto Vaccine, Kennel Cough Vaccine, Rabies Vaccine, Yearly Parasite Test, Yearly Bloodwork, Toe Nail Trim (4 per year), Blood Pressure',
+    'dog_basic_service' => 'yes, yes ,yes, yes, yes, yes, no, no, no, no',
+    'dog_plus_service' => 'yes, yes, yes, yes, yes, yes, yes, yes, no, no',
+    'dog_elite_service' => 'yes, yes, yes, yes, yes, yes, yes, yes, yes, yes',
   ), $atts);
+  wp_localize_script('PMscripts', 'PMdata', $data);
 ?>
-<div class="plan-menu-container">
+<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+<div id="plan-menu-container" class="plan-menu-container">
   <div class="plan-menu-rail">
     <h1 class="plan-menu-header"><?php echo $data['headline']; ?></h1>
     <div class="plan-menu-grid plan-menu-fade">
@@ -55,7 +66,7 @@ function plan_menu($atts) {
           </div>
           <div class="plan-menu-buttons">
             <div class="plan-menu-button-flex">
-              <button onclick="window.location='<?php echo $data['cat_plan_detail_link']; ?>';"class="plan-menu-button-detail">Plan Detail</button>
+              <button id="cat-chart-detail-button" class="plan-menu-button-detail">Plan Detail</button>
               <button onclick="window.location='<?php echo $data['cat_plan_select_link']; ?>';" class="plan-menu-button-select">Select Plan</button>
             </div>
           </div>
@@ -88,11 +99,73 @@ function plan_menu($atts) {
           </div>
           <div class="plan-menu-buttons">
             <div class="plan-menu-button-flex">
-              <button onclick="window.location='<?php echo $data['dog_plan_detail_link']; ?>';" class="plan-menu-button-detail">Plan Detail</button>
+              <button id="dog-chart-detail-button" class="plan-menu-button-detail">Plan Detail</button>
               <button onclick="window.location='<?php echo $data['dog_plan_select_link']; ?>';" class="plan-menu-button-select">Select Plan</button>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Cat Plan Modal -->
+<div id="cat-chart-modal" class="modal">
+  <span class="close-modal">&#10005;</span>
+  <div class="modal-content">
+    <div class="plan-menu-chart-container">
+      <h1 class="plan-menu-chart-header">Feline Wellness Plans</h1>
+      <div class="plan-menu-chart-grid">
+        <h2><i class="far fa-plus-square"></i><br>Service</h2>
+        <h2><i class="far fa-circle"></i><br>Basic</h2>
+        <h2><i class="far fa-square"></i><br>Plus</h2>
+        <h2><i class="far fa-star"></i><br>Elite</h2>
+      </div>
+      <div class="plan-menu-chart-grid">
+        <div id="plan-menu-cat-service-list" class="plan-menu-chart-flex">
+        </div>
+        <div id="plan-menu-cat-basic-plan" class="plan-menu-chart-flex plan-menu-icon-list">
+        </div>
+        <div id="plan-menu-cat-plus-plan" class="plan-menu-chart-flex plan-menu-icon-list">
+        </div>
+        <div id="plan-menu-cat-elite-plan" class="plan-menu-chart-flex plan-menu-icon-list">
+        </div>
+      </div>
+      <div class="plan-menu-chart-grid plan-menu-chart-prices">
+        <h2>Price Per Month</h2>
+        <h2>$<?php echo $data['cat_plan_price']; ?></h2>
+        <h2>$<?php echo $data['cat_plan_price'] + $data['plus_plan_premium']; ?></h2>
+        <h2>$<?php echo $data['cat_plan_price'] + $data['elite_plan_premium']; ?></h2>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Dog Plan Modal -->
+<div id="dog-chart-modal" class="modal">
+  <span class="close-modal">&#10005;</span>
+  <div class="modal-content">
+    <div class="plan-menu-chart-container">
+      <h1 class="plan-menu-chart-header">Canine Wellness Plans</h1>
+      <div class="plan-menu-chart-grid">
+        <h2><i class="far fa-plus-square"></i><br>Service</h2>
+        <h2><i class="far fa-circle"></i><br>Basic</h2>
+        <h2><i class="far fa-square"></i><br>Plus</h2>
+        <h2><i class="far fa-star"></i><br>Elite</h2>
+      </div>
+      <div class="plan-menu-chart-grid">
+        <div id="plan-menu-dog-service-list" class="plan-menu-chart-flex">
+        </div>
+        <div id="plan-menu-dog-basic-plan" class="plan-menu-chart-flex plan-menu-icon-list">
+        </div>
+        <div id="plan-menu-dog-plus-plan" class="plan-menu-chart-flex plan-menu-icon-list">
+        </div>
+        <div id="plan-menu-dog-elite-plan" class="plan-menu-chart-flex plan-menu-icon-list">
+        </div>
+      </div>
+      <div class="plan-menu-chart-grid plan-menu-chart-prices">
+        <h2>Price Per Month</h2>
+        <h2>$<?php echo $data['dog_plan_price']; ?></h2>
+        <h2>$<?php echo $data['dog_plan_price'] + $data['plus_plan_premium']; ?></h2>
+        <h2>$<?php echo $data['dog_plan_price'] + $data['elite_plan_premium']; ?></h2>
       </div>
     </div>
   </div>
@@ -103,7 +176,6 @@ return ob_get_clean();
 
 add_shortcode('plan_menu', 'plan_menu');
 function plan_menu_assets() {
-wp_enqueue_script( 'PMscripts',  plugin_dir_url( __FILE__ ) . '/plan-menu.js', array( 'jquery' ) );
 wp_enqueue_style( 'PMstyles',  plugin_dir_url( __FILE__ ) . '/plan-menu.css' );
 }
 add_action('wp_enqueue_scripts', 'plan_menu_assets');

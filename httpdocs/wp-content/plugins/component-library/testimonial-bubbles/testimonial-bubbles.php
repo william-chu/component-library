@@ -8,7 +8,7 @@ Version: 0.1
 function testimonial_bubbles($atts) {
   ob_start();
   $data = shortcode_atts(array(
-    'variable' => 'variable default',
+    'icon' => 'https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/star.png',
   ), $atts);
   $args = array(
     'category_name' => 'Testimonials'
@@ -18,7 +18,7 @@ function testimonial_bubbles($atts) {
 <div class="testimonial-bubbles-container">
   <div class="testimonial-bubbles-flex">
     <div>
-      <img class="testimonial-bubbles-icon" src="http://william.ivetbuilds.com/wp-content/uploads/2018/08/star.png" alt="star icon" />
+      <img class="testimonial-bubbles-icon" src="<?php echo $data['icon']; ?>" alt="star icon" />
       <h1>Satisfied Customers</h1>
       <div id="testimonial-bubbles">
         <!-- Begin loop  -->

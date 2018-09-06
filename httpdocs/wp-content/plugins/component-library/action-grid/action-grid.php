@@ -8,13 +8,13 @@ Version: 0.1
   function action_grid($atts) {
   	ob_start();
   	$data = shortcode_atts(array(
-  		'headline' => 'No Appointments - Walk In Today!',
-  		'action_header1' => 'Services & Pricing',
-      'action_header2' => 'Register and Check-In Online',
-  		'action_description1' => 'A new breed of veterinary clinic. We focus on affordable, preventative and minor illness care.',
-      'action_description2' => 'Planning to visit us? Save time by registering and checking-in online. When you walk in to see us, check-in will be fast and easy!',
-  		'action_button1' => 'View Our Services',
-      'action_button2' => 'Register and Check-In Here',
+  	  'headline' => 'Call to action headline',
+  	  'action_header1' => 'First action header',
+      'action_header2' => 'Second action header',
+  	  'action_description1' => 'First action description text goes here',
+      'action_description2' => 'Second action description text goes here',
+  	  'action_button1' => 'First action button',
+      'action_button2' => 'Second action button',
       'action_link1' => '#',
       'action_link2' => '#'
   	), $atts);
@@ -25,7 +25,7 @@ Version: 0.1
       <div class="ribbon-shadow"></div>
       <div class="action-grid">
         <div class="action-grid-icon-flex">
-          <img class="action-grid-icon" src="http://william.ivetbuilds.com/wp-content/uploads/2018/08/heart.png" alt="heart icon" />
+          <img class="action-grid-icon" src="https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/heart.png" alt="heart icon" />
         </div>
         <div class="action-grid-text">
           <h2><?php echo $data['action_header1']; ?></h2>
@@ -35,7 +35,7 @@ Version: 0.1
       </div>
       <div class=action-grid>
         <div class="action-grid-icon-flex">
-          <img class="action-grid-icon" src="http://william.ivetbuilds.com/wp-content/uploads/2018/08/registration.png" alt="pencil and paper icon" />
+          <img class="action-grid-icon" src="https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/registration.png" alt="pencil and paper icon" />
         </div>
         <div class="action-grid-text">
           <h2><?php echo $data['action_header2']; ?></h2>

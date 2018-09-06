@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: iVET360 Component Library
+Plugin Name: Component Library
 Description: Reusable Components
 Author: William Chu
 Version: 0.1

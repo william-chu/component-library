@@ -54,23 +54,26 @@
 .blog-list-item:last-of-type {
   margin-bottom: 0;
 }
-.blog-list-date {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-style: italic;
-  font-size: 1.2rem;
-  color: #3c3c3c;
-}
 .blog-list-title {
   margin: 0;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 2rem;
   color: #fff;
-  background-color: #7bcc7b;
+  background: #7bcc7b;
   padding: 10px 20px;
   box-shadow: 4px 4px lightgreen;
   border-top-left-radius: 5px;
   border-bottom-right-radius: 5px;
   width: auto;
+}
+.blog-list-title-link:hover ~ .blog-list-link {
+  background: lightgreen;
+}
+.blog-list-date {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #3c3c3c;
 }
 .blog-list-item p {
   font-family: 'Montserrat', sans-serif;
@@ -91,6 +94,6 @@
   transition: .5s;
 }
 .blog-list-link:hover {
-  background-color: lightgreen;
+  background: lightgreen;
 }
 /* Site Specific Styles */

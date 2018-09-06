@@ -8,7 +8,8 @@ Version: 0.1
 function footer_menu($atts) {
   ob_start();
   $data = shortcode_atts(array(
-    'hospital_name' => 'Hospital Name',
+    'hospital_logo' => 'https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/corgi.png',
+	'hospital_name' => 'Hospital Name',
     'hospital_address' => '123 Street Address',
     'hospital_city' => 'Portland',
     'hospital_state' => 'OR',
@@ -29,7 +30,7 @@ function footer_menu($atts) {
   <div class="footer-menu-rail">
     <div class="footer-menu-grid">
       <div>
-        <img class="footer-menu-logo" src="http://william.ivetbuilds.com/wp-content/uploads/2018/08/corgi.png" alt="hospital logo" />
+        <img class="footer-menu-logo" src="<?php echo $data['hospital_logo']; ?>" alt="hospital logo" />
         <h1 class="footer-menu-name"><?php echo $data['hospital_name']; ?></h1>
         <div class="footer-menu-contact">
           <h2 class="footer-menu-address"><?php echo $data['hospital_address']; ?></h2>

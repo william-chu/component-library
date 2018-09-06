@@ -136,7 +136,6 @@
 }
 .plan-menu-details-charge {
   font-family: 'Open Sans Condensed', sans-serif;
-  /* font-weight: bold; */
   font-size: 1.3rem;
   margin: 0 0 5px 0;
   letter-spacing: .2px;
@@ -190,4 +189,136 @@
   background: #7bccc4;
   cursor: pointer;
 }
+.plan-menu-chart-container {
+  display: block;
+  margin: 0 auto;
+  background: #fff;
+  border: 4px solid #3c3c3c;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  max-width: 768px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 50px;
+}
+.plan-menu-chart-header {
+  background: #3c3c3c;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 3px 0;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: .5px;
+  transition: .5s;
+}
+.plan-menu-chart-image {
+  width: 100%;
+  display: block;
+  margin: 0 auto -50px;
+  z-index: -10;
+  /* creates triangle - the polygon() function takes a comma-separated list
+     of x y positions in relation to the origin 0 0 point
+     (the top-left) of the element, using those points
+     to form a line from one to the next (and from the last
+     to the first): */
+  -webkit-clip-path: polygon(50% 85%, -75% 0%, 175% 0%, 50% 85%);
+  clip-path: polygon(50% 85%, -75% 0%, 175% 0%, 50% 85%);
+}
+.plan-menu-chart-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+.plan-menu-chart-flex {
+  display: flex;
+  flex-direction: column;
+}
+.plan-menu-chart-flex p:nth-child(even) {
+  background: #efefef;
+}
+.plan-menu-chart-flex p {
+  margin: 0;
+  padding: 5px 0;
+  height: 100%;
+  white-space: nowrap;
+}
+.plan-menu-icon-list {
+  color: #3cb33c;
+  border-left: 1px solid #e2e2e2;
+}
+.plan-menu-chart-grid h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  transition: .5s;
+}
+.plan-menu-chart-grid p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  font-size: 1.1rem;
+  transition: .5s;
+}
+@media (min-width: 768px) {
+  .plan-menu-chart-header {
+    font-size: 1.3rem;
+    padding: 5px 0;
+  }
+  .plan-menu-chart-grid h2 {
+    font-size: 1.3rem;
+  }
+  .plan-menu-chart-grid p {
+    font-size: 1.5rem;
+  }
+}
+#plan-menu-cat-service-list p, #plan-menu-dog-service-list p {
+  text-align: left;
+  padding-left: 10px;
+}
+.plan-menu-chart-prices {
+  background: #7bccc4;
+  color: #fff;
+}
+/* Chart Modal Styling*/
+  /* Modal Background */
+  .blur {
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+  }
+  /* Modal Content */
+  .modal-content {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
+  /* The Close Button */
+  .close-modal {
+    color: red;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px 0 0;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close-modal:hover,
+  .close-modal:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
 /* Site Specific Styles */

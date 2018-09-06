@@ -30,7 +30,7 @@ Version: 0.1
                 <h2 class="menu-fade-text"><?php echo $data['menu_title1']; ?></h2>
               </div>
             </div>
-            <img class="menu-fade-icon" src="http://william.ivetbuilds.com/wp-content/uploads/2018/08/placemarker.png" alt="placemarker icon" />
+            <img class="menu-fade-icon" src="https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/placemarker.png" alt="placemarker icon" />
           </div>
         </a>
         <a href="<?php echo $data['menu_link2']; ?>">
@@ -41,7 +41,7 @@ Version: 0.1
                 <h2 class="menu-fade-text"><?php echo $data['menu_title2']; ?></h2>
               </div>
             </div>
-            <img class="menu-fade-icon" src="http://william.ivetbuilds.com/wp-content/uploads/2018/08/health.png" alt="clinic icon" />
+            <img class="menu-fade-icon" src="https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/health.png" alt="clinic icon" />
           </div>
         </a>
         <a href="<?php echo $data['menu_link3']; ?>">
@@ -52,7 +52,7 @@ Version: 0.1
                 <h2 class="menu-fade-text"><?php echo $data['menu_title3']; ?></h2>
               </div>
             </div>
-            <img class="menu-fade-icon" src="http://william.ivetbuilds.com/wp-content/uploads/2018/08/calendar.png" alt="calendar icon" />
+            <img class="menu-fade-icon" src="https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/calendar.png" alt="calendar icon" />
           </div>
         </a>
       </div>
