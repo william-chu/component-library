@@ -289,7 +289,7 @@
     -ms-filter: blur(3px);
     filter: blur(3px);
   }
-  .modal {
+  .plan-menu-modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -301,13 +301,13 @@
     background-color: rgba(0,0,0,0.8);
   }
   /* Modal Content */
-  .modal-content {
+  .plan-menu-modal-content {
     margin: auto;
     width: 100%;
     height: 100%;
   }
   /* The Close Button */
-  .close-modal {
+  .plan-menu-close-modal {
     color: red;
     display: flex;
     justify-content: flex-end;
@@ -315,10 +315,9 @@
     font-size: 28px;
     font-weight: bold;
   }
-  .close-modal:hover,
-  .close-modal:focus {
+  .plan-menu-close-modal:hover,
+  .plan-menu-close-modal:focus {
     text-decoration: none;
     cursor: pointer;
   }
-
 /* Site Specific Styles */

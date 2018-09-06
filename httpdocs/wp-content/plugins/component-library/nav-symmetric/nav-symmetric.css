@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"');
+/* Component Styles */
+.nav-symmetric-container {
+  background: #5f5858;
+  padding: 15px 0 10px;
+  position: relative;
+}
+.nav-symmetric-bar {
+  background: #ff9640;
+  background: linear-gradient(to bottom, #f8bb50, #ff9640);
+  position: absolute;
+  height: 70px;
+  top: 60px;
+  width: 100%;
+}
+.nav-symmetric-rail {
+  max-width: 768px;
+  display: block;
+  margin: auto;
+  z-index: 20;
+  position: relative;
+}
+.nav-symmetric-logo {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.nav-symmetric-menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  color: #fff;
+  border: 2px solid #f8bb50;
+  font-size: 1.3rem;
+  background: rgba(0,0,0,.7);
+}
+.nav-symmetric-menu-button i {
+  transition: .5s;
+}
+.nav-symmetric-menu-button:hover > i {
+  opacity: .3;
+}
+.nav-symmetric-fullscreen {
+  display: none;
+}
+#nav-symmetric-menu-button {
+  opacity: 1;
+  transition: .3s;
+}
+@media (min-width: 950px) {
+  .nav-symmetric-fullscreen {
+    display: block;
+  }
+  #nav-symmetric-menu-button {
+    opacity: 0;
+  }
+}
+/* Mobile nav styling */
+.nav-symmetric-mobile ul, .nav-symmetric-fullscreen ul {
+  list-style: none;
+}
+.nav-symmetric-mobile ul.menu {
+  color: #ff9640;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+.nav-symmetric-mobile ul.menu li {
+  padding-top: 15px;
+}
+.nav-symmetric-mobile .sub-menu {
+  white-space: nowrap;
+  transition: .5s;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: .9rem;
+  text-align: left;
+  letter-spacing: normal;
+  text-transform: none;
+  padding-left: 10px;
+}
+.nav-symmetric-mobile .sub-menu a {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 10px;
+}
+.nav-symmetric-mobile .sub-menu a {
+  transition: .5s;
+}
+.nav-symmetric-mobile .sub-menu a:hover {
+  color: #f8bb50;
+}
+.nav-symmetric-mobile ul.menu .sub-menu li {
+  padding: 5px 0;
+}
+/* Fullscreen nav styling */
+.nav-symmetric-fullscreen ul.menu {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0 0;
+  color: #fff;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+.nav-symmetric-fullscreen a {
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.nav-symmetric-fullscreen .menu-item-has-children {
+  position: relative;
+}
+.nav-symmetric-fullscreen .sub-menu {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  position: absolute;
+  top: 40px;
+  background: rgba(0,0,0,.9);
+  border: 1px solid #ff9640;
+  padding: 0;
+  z-index: 10;
+  transition: .5s;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: .9rem;
+  text-align: left;
+  letter-spacing: normal;
+  visibility: hidden;
+  text-transform: none;
+}
+.nav-symmetric-fullscreen .sub-menu a {
+  transition: .5s;
+}
+.nav-symmetric-fullscreen .sub-menu a:hover {
+  color: #f8bb50;
+}
+.nav-symmetric-fullscreen .menu-item-has-children:hover > .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.nav-symmetric-fullscreen ul.menu .sub-menu li {
+  padding: 5px 0;
+}
+/* Chart Modal Styling*/
+  /* Modal Background */
+  .nav-symmetric-modal {
+    position: fixed;
+    box-sizing: border-box;
+    box-shadow: inset -2px 0 0 0 #f8bb50;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    overflow-y: scroll;
+    transition: .5s;
+    background-color: rgba(0,0,0,0.90);
+  }
+  /* Modal Content */
+  .nav-symmetric-modal-content {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+  /* The Close Button */
+  #nav-symmetric-close-button {
+    color: red;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px 0 0;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  #nav-symmetric-close-button:hover,
+  #nav-symmetric-close-button:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
+/* Site Specific Styles */

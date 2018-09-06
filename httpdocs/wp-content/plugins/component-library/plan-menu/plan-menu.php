@@ -66,7 +66,7 @@ function plan_menu($atts) {
           </div>
           <div class="plan-menu-buttons">
             <div class="plan-menu-button-flex">
-              <button id="cat-chart-detail-button" class="plan-menu-button-detail">Plan Detail</button>
+              <button id="plan-menu-cat-chart-detail-button" class="plan-menu-button-detail">Plan Detail</button>
               <button onclick="window.location='<?php echo $data['cat_plan_select_link']; ?>';" class="plan-menu-button-select">Select Plan</button>
             </div>
           </div>
@@ -99,7 +99,7 @@ function plan_menu($atts) {
           </div>
           <div class="plan-menu-buttons">
             <div class="plan-menu-button-flex">
-              <button id="dog-chart-detail-button" class="plan-menu-button-detail">Plan Detail</button>
+              <button id="plan-menu-dog-chart-detail-button" class="plan-menu-button-detail">Plan Detail</button>
               <button onclick="window.location='<?php echo $data['dog_plan_select_link']; ?>';" class="plan-menu-button-select">Select Plan</button>
             </div>
           </div>
@@ -109,9 +109,9 @@ function plan_menu($atts) {
   </div>
 </div>
 <!-- Cat Plan Modal -->
-<div id="cat-chart-modal" class="modal">
-  <span class="close-modal">&#10005;</span>
-  <div class="modal-content">
+<div id="plan-menu-cat-chart-modal" class="plan-menu-modal">
+  <span class="plan-menu-close-modal">&#10005;</span>
+  <div class="plan-menu-modal-content">
     <div class="plan-menu-chart-container">
       <h1 class="plan-menu-chart-header">Feline Wellness Plans</h1>
       <div class="plan-menu-chart-grid">
@@ -140,9 +140,9 @@ function plan_menu($atts) {
   </div>
 </div>
 <!-- Dog Plan Modal -->
-<div id="dog-chart-modal" class="modal">
-  <span class="close-modal">&#10005;</span>
-  <div class="modal-content">
+<div id="plan-menu-dog-chart-modal" class="plan-menu-modal">
+  <span class="plan-menu-close-modal">&#10005;</span>
+  <div class="plan-menu-modal-content">
     <div class="plan-menu-chart-container">
       <h1 class="plan-menu-chart-header">Canine Wellness Plans</h1>
       <div class="plan-menu-chart-grid">
