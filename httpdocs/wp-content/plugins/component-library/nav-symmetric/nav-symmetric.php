@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Nav Symmetric
-Description: Navbar with logo in center
+Description: Navbar with logo in center, Appearance > Menus > Manage Locations > set menu you create to the Primary
 Author: William Chu
 Version: 0.1
 */

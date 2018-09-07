@@ -38,5 +38,7 @@ require( dirname( __FILE__ ) . '/masthead-carousel/masthead-carousel.php');
 require( dirname( __FILE__ ) . '/menu-colorful/menu-colorful.php');
 require( dirname( __FILE__ ) . '/blog-scroll/blog-scroll.php');
 require( dirname( __FILE__ ) . '/plan-menu/plan-menu.php');
+require( dirname( __FILE__ ) . '/service-flip/service-flip.php');
+require( dirname( __FILE__ ) . '/nav-symmetric/nav-symmetric.php');
 
 ?>
