@@ -15,8 +15,10 @@ function nav_symmetric($atts) {
 <div class="nav-symmetric-container">
   <div class="nav-symmetric-bar"></div>
   <div class="nav-symmetric-rail">
-    <a href="<?php echo $data['home_link']; ?>"><img class="nav-symmetric-logo" src="https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/logo.jpg" alt="company logo" />
-    <div class="nav-symmetric-fullscreen"></a>
+    <a href="<?php echo $data['home_link']; ?>">
+      <img class="nav-symmetric-logo" src="https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/logo.jpg" alt="company logo" />
+    </a>
+    <div class="nav-symmetric-fullscreen">
       <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); // Display the user-defined menu in Appearance > Menus ?>
     </div>
     <div id="nav-symmetric-menu-button" class="nav-symmetric-menu-button">

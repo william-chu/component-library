@@ -3,7 +3,7 @@
 /* Component Styles */
 .nav-symmetric-container {
   background: #5f5858;
-  padding: 15px 0 10px;
+  padding: 25px 0 10px;
   position: relative;
 }
 .nav-symmetric-bar {
@@ -24,7 +24,7 @@
 .nav-symmetric-logo {
   width: 150px;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 10px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .nav-symmetric-menu-button {
@@ -33,7 +33,7 @@
   align-items: center;
   padding: 8px 10px;
   position: absolute;
-  top: -5px;
+  top: -15px;
   right: 20px;
   color: #fff;
   border: 2px solid #f8bb50;
@@ -123,7 +123,7 @@
   text-decoration: none;
   white-space: nowrap;
   color: #fff;
-  padding: 5px 10px;
+  padding: 5px 10px 20px;
   cursor: pointer;
 }
 .nav-symmetric-fullscreen .menu-item-has-children {
@@ -150,6 +150,7 @@
 }
 .nav-symmetric-fullscreen .sub-menu a {
   transition: .5s;
+  padding: 5px 10px;
 }
 .nav-symmetric-fullscreen .sub-menu a:hover {
   color: #f8bb50;

@@ -46,6 +46,8 @@
 <header id="masthead">
 	<?php if (is_page('orange-gray-theme') || is_page('nav-symmetric')) {
 		echo do_shortcode('[nav_symmetric]');
+	} else if (is_page('green-theme') || is_page('nav-pets')) {
+		echo do_shortcode('[nav_pets]');
 	} else {
 		?>
 		<div>
@@ -62,6 +64,7 @@
 					<option value="http://componentlibrary.000webhostapp.com/blog-list/">Blog List</option>
 					<option value="http://componentlibrary.000webhostapp.com/blog-scroll/">Blog Scroll</option>
 					<option value="http://componentlibrary.000webhostapp.com/footer-menu/">Footer Menu</option>
+					<option value="http://componentlibrary.000webhostapp.com/nav-pets/">Nav Symmetric</option>
 					<option value="http://componentlibrary.000webhostapp.com/nav-symmetric/">Nav Symmetric</option>
 					<option value="http://componentlibrary.000webhostapp.com/location-grid/">Location Grid</option>
 					<option value="http://componentlibrary.000webhostapp.com/masthead-carousel/">Masthead Carousel</option>
@@ -99,4 +102,4 @@
 		<?php
 	} ?>
 </header><!-- #masthead .site-header -->
-<main class="main-fluid"><!-- start the page containter -->
+<main class="main-fluid"><!-- start the page container -->
