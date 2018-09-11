@@ -63,6 +63,7 @@
 					<option value="http://componentlibrary.000webhostapp.com/action-grid/">Action Grid</option>
 					<option value="http://componentlibrary.000webhostapp.com/blog-list/">Blog List</option>
 					<option value="http://componentlibrary.000webhostapp.com/blog-scroll/">Blog Scroll</option>
+					<option value="http://componentlibrary.000webhostapp.com/blog-three/">Blog Three</option>
 					<option value="http://componentlibrary.000webhostapp.com/footer-menu/">Footer Menu</option>
 					<option value="http://componentlibrary.000webhostapp.com/nav-pets/">Nav Symmetric</option>
 					<option value="http://componentlibrary.000webhostapp.com/nav-symmetric/">Nav Symmetric</option>
@@ -71,6 +72,7 @@
 					<option value="http://componentlibrary.000webhostapp.com/menu-colorful/">Menu Colorful</option>
 					<option value="http://componentlibrary.000webhostapp.com/menu-fade/">Menu Fade</option>
 					<option value="http://componentlibrary.000webhostapp.com/plan-menu/">Plan Menu</option>
+					<option value="http://componentlibrary.000webhostapp.com/promo-modal/">Promo Modal</option>
 					<option value="http://componentlibrary.000webhostapp.com/service-accordion/">Service Accordion</option>
 					<option value="http://componentlibrary.000webhostapp.com/service-flip/">Service Flip</option>
 					<option value="http://componentlibrary.000webhostapp.com/service-leaflets/">Service Leaflets</option>
