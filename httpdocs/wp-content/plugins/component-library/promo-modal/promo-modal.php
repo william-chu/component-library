@@ -17,7 +17,7 @@ function promo_modal($atts) {
 
 <div id="promo-modal-container">
   <div class="promo-modal-content">
-    <span class="promo-modal-close-modal">&#10005;</span>
+    <span class="promo-modal-close-modal">&times;</span>
     <img src="<?php echo $data['image']; ?>" alt="promo image"/>
   </div>
 </div>
