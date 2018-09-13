@@ -39,9 +39,6 @@
   display: block;
   margin: auto;
 }
-.masthead-slide-parallax-layer {
-
-}
 .masthead-parallax-layer-1 {
   -webkit-animation: parallax_fg linear 30s infinite both;
           animation: parallax_fg linear 30s infinite both;
@@ -53,6 +50,7 @@
   width: 100%;
   height: 100%;
   background-size: auto 145px;
+  filter: hue-rotate(190deg);
 }
 .masthead-parallax-layer-2 {
   -webkit-animation: parallax_fg linear 55s infinite both;
@@ -65,6 +63,7 @@
   width: 100%;
   height: 100%;
   background-size: auto 158px;
+  filter: hue-rotate(190deg);
 }
 .masthead-parallax-layer-3 {
   -webkit-animation: parallax_fg linear 75s infinite both;
@@ -77,6 +76,7 @@
   width: 100%;
   height: 100%;
   background-size: auto 468px;
+  filter: hue-rotate(190deg);
 }
 .masthead-parallax-layer-4 {
   -webkit-animation: parallax_fg linear 95s infinite both;
@@ -89,6 +89,7 @@
   width: 100%;
   height: 100%;
   background-size: auto 311px;
+  filter: hue-rotate(190deg);
 }
 .masthead-parallax-layer-5 {
   -webkit-animation: parallax_fg linear 120s infinite both;
@@ -101,6 +102,7 @@
   width: 100%;
   height: 100%;
   background-size: auto 222px;
+  filter: hue-rotate(190deg);
 }
 @-webkit-keyframes parallax_fg {
   0% {
@@ -123,7 +125,7 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   z-index: 10;
 }
 .masthead-parallax-link a {
@@ -143,6 +145,7 @@
 .masthead-parallax-fade {
   height: 80px;
   width: 100%;
-  background: linear-gradient(to bottom, #012d53, #5f5858);
+  margin-top: -1px;
+  background: linear-gradient(to bottom, #432300, #5f5858);
 }
 /* Site Specific Styles */

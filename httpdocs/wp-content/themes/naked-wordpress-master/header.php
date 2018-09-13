@@ -54,33 +54,33 @@
 			<nav>
 				<select onchange="javascript:location.href = this.value;">
 					<option selected disabled>Select Theme</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/green-theme/">Green Theme</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/orange-gray-theme/">Orange Gray Theme</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/purple-theme/">Purple Theme</option>
+					<option value="http://componentlibrary.blogdrop.eu/green-theme/">Green Theme</option>
+					<option value="http://componentlibrary.blogdrop.eu/orange-gray-theme/">Orange Gray Theme</option>
+					<option value="http://componentlibrary.blogdrop.eu/purple-theme/">Purple Theme</option>
 				</select>
 				<select onchange="javascript:location.href = this.value;">
 					<option selected disabled>Select Component</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/action-grid/">Action Grid</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/blog-list/">Blog List</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/blog-scroll/">Blog Scroll</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/blog-three/">Blog Three</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/footer-menu/">Footer Menu</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/nav-pets/">Nav Symmetric</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/nav-symmetric/">Nav Symmetric</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/location-grid/">Location Grid</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/masthead-carousel/">Masthead Carousel</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/masthead-parallax/">Masthead Parallax</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/menu-colorful/">Menu Colorful</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/menu-fade/">Menu Fade</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/plan-menu/">Plan Menu</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/promo-modal/">Promo Modal</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/service-accordion/">Service Accordion</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/service-flip/">Service Flip</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/service-leaflets/">Service Leaflets</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/service-tile/">Service Tile</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/stats-odometer/">Stats Odometer</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/testimonial-bubbles/">Testimonial Bubbles</option>
-					<option value="http://componentlibrary.blogdrop.eu/index.php/testimonial-carousel/">Testimonial Carousel</option>
+					<option value="http://componentlibrary.blogdrop.eu/action-grid/">Action Grid</option>
+					<option value="http://componentlibrary.blogdrop.eu/blog-list/">Blog List</option>
+					<option value="http://componentlibrary.blogdrop.eu/blog-scroll/">Blog Scroll</option>
+					<option value="http://componentlibrary.blogdrop.eu/blog-three/">Blog Three</option>
+					<option value="http://componentlibrary.blogdrop.eu/footer-menu/">Footer Menu</option>
+					<option value="http://componentlibrary.blogdrop.eu/nav-pets/">Nav Pets</option>
+					<option value="http://componentlibrary.blogdrop.eu/nav-symmetric/">Nav Symmetric</option>
+					<option value="http://componentlibrary.blogdrop.eu/location-grid/">Location Grid</option>
+					<option value="http://componentlibrary.blogdrop.eu/masthead-carousel/">Masthead Carousel</option>
+					<option value="http://componentlibrary.blogdrop.eu/masthead-parallax/">Masthead Parallax</option>
+					<option value="http://componentlibrary.blogdrop.eu/menu-colorful/">Menu Colorful</option>
+					<option value="http://componentlibrary.blogdrop.eu/menu-fade/">Menu Fade</option>
+					<option value="http://componentlibrary.blogdrop.eu/plan-menu/">Plan Menu</option>
+					<option value="http://componentlibrary.blogdrop.eu/promo-modal/">Promo Modal</option>
+					<option value="http://componentlibrary.blogdrop.eu/service-accordion/">Service Accordion</option>
+					<option value="http://componentlibrary.blogdrop.eu/service-flip/">Service Flip</option>
+					<option value="http://componentlibrary.blogdrop.eu/service-leaflets/">Service Leaflets</option>
+					<option value="http://componentlibrary.blogdrop.eu/service-tile/">Service Tile</option>
+					<option value="http://componentlibrary.blogdrop.eu/stats-odometer/">Stats Odometer</option>
+					<option value="http://componentlibrary.blogdrop.eu/testimonial-bubbles/">Testimonial Bubbles</option>
+					<option value="http://componentlibrary.blogdrop.eu/testimonial-carousel/">Testimonial Carousel</option>
 				</select>
 				<!-- <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); // Display the user-defined menu in appearance > menus ?> -->
 			</nav><!-- .site-navigation .main-navigation -->
