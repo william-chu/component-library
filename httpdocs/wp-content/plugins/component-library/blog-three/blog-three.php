@@ -18,10 +18,10 @@ Version: 0.1
 <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
   <div class="blog-three-container">
     <div class="blog-three-container-rail">
-      <img class="blog-three-paw-print" id="blog-three-cat-print1" src="https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/cat-footprint.png" alt="cat print"/>
-      <img class="blog-three-paw-print" id="blog-three-cat-print2" src="https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/cat-footprint.png" alt="cat print"/>
-      <img class="blog-three-paw-print" id="blog-three-dog-print3" src="https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/dog-footprint.png" alt="dog print"/>
-      <img class="blog-three-paw-print" id="blog-three-dog-print4" src="https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/dog-footprint.png" alt="dog print"/>
+      <img class="blog-three-paw-print" id="blog-three-cat-print1" src="http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/09/cat-footprint.png" alt="cat print"/>
+      <img class="blog-three-paw-print" id="blog-three-cat-print2" src="http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/09/cat-footprint.png" alt="cat print"/>
+      <img class="blog-three-paw-print" id="blog-three-dog-print3" src="http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/09/dog-footprint.png" alt="dog print"/>
+      <img class="blog-three-paw-print" id="blog-three-dog-print4" src="http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/09/dog-footprint.png" alt="dog print"/>
       <div class="blog-three-rail">
         <h1 class="blog-three-header">Latest From Our Blog</h1>
         <div class="blog-three-grid">

@@ -33,7 +33,7 @@ function service_accordion($atts) {
 ?>
 <div class="service-accordion-container">
   <div class="service-accordion-flex">
-    <img src="https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/servicesdog.jpg" alt="picture of dog" />
+    <img src="http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/09/servicesdog.jpg" alt="picture of dog" />
     <div class="service-accordion-rail">
       <h1>Services</h1>
       <div class="service-accordion">

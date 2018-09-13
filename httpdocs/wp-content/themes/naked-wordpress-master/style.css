@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Pragati+Narrow');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+/*
+Theme Name: Naked Wordpress
+Theme URI: http://bckmn.com/naked-wordpress
+Author: J Beckman
+Author URI: http://bckmn.com
+Description: A super bare theme for designers who don't know Wordpress PHP but want to build with Wordpress.
+Version: 1.0
+License: GNU General Public License
+
+-------------------------------------------------------------- */
 html, body {
   background-color: #33c0b6;
   /* Font smoothing */

@@ -8,7 +8,7 @@ Version: 0.1
 function footer_menu($atts) {
   ob_start();
   $data = shortcode_atts(array(
-    'hospital_logo' => 'https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/corgi.png',
+    'hospital_logo' => 'http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/09/corgi.png',
 	'hospital_name' => 'Hospital Name',
     'hospital_address' => '123 Street Address',
     'hospital_city' => 'Portland',

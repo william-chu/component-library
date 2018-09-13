@@ -10,8 +10,8 @@ function plan_menu($atts) {
   wp_enqueue_script( 'PMscripts',  plugin_dir_url( __FILE__ ) . '/plan-menu.js', array( 'jquery' ) );
   $data = shortcode_atts(array(
     'headline' => 'Select Your Plan',
-    'cat_image' => 'https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/pet-plan-cat.jpg',
-    'dog_image' => 'https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/pet-plan-dog.jpg',
+    'cat_image' => 'http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/09/pet-plan-cat.jpg',
+    'dog_image' => 'http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/09/pet-plan-dog.jpg',
     'cat_plan_price' => '10',
     'dog_plan_price' => '12',
     'plus_plan_premium' => '12',

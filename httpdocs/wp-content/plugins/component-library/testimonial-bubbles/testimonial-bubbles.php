@@ -8,7 +8,7 @@ Version: 0.1
 function testimonial_bubbles($atts) {
   ob_start();
   $data = shortcode_atts(array(
-    'icon' => 'https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/star.png',
+    'icon' => 'http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/09/star.png',
   ), $atts);
   $args = array(
     'category_name' => 'Testimonials'

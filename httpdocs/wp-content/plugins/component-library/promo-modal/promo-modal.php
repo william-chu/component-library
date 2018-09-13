@@ -9,7 +9,7 @@ function promo_modal($atts) {
   ob_start();
   wp_enqueue_script( 'PRMscripts',  plugin_dir_url( __FILE__ ) . '/promo-modal.js', array( 'jquery' ) );
   $data = shortcode_atts(array(
-    'image' => 'https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/promo.png',
+    'image' => 'http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/09/promo.png',
     'delay' => '2000',
   ), $atts);
   wp_localize_script('PRMscripts', 'PRMdata', $data);

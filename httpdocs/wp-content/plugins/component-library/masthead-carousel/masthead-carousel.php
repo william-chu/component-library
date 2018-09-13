@@ -9,9 +9,9 @@ function masthead_carousel($atts) {
   ob_start();
   wp_enqueue_script( 'MCscripts',  plugin_dir_url( __FILE__ ) . '/masthead-carousel.js', array( 'jquery' ) );
   $data = shortcode_atts(array(
-    'image1' => 'https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/masthead-carousel1.jpg',
-    'image2' => 'https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/masthead-carousel2.jpg',
-    'image3' => 'https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/masthead-carousel3.jpg',
+    'image1' => 'http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/09/masthead-carousel1.jpg',
+    'image2' => 'http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/09/masthead-carousel2.jpg',
+    'image3' => 'http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/09/masthead-carousel3.jpg',
     'headline1' => 'Headline 1 goes here',
     'headline2' => 'A different Headline 2',
     'headline3' => 'Last Headline 3',

@@ -8,12 +8,16 @@ A library of responsively styled components for WordPress created with PHP, JS a
 
 ## Setup/Instructions
 
-* To view project, go to https://componentlibrary.000webhostapp.com
+* To view project, go to http://componentlibrary.blogdrop.eu/index.php
 
 ## Media Attribution
 
-* Icons8.com
-* Unsplash stock images
+* Icons from https://icons8.com https://www.flaticon.com/ and https://fontawesome.com/
+* Stock images from https://unsplash.com
+* Promo modal created using https://easil.com
+* Company logos created using https://www.designevo.com/
+* Masthead parallax taken from https://codepen.io/Jursdotme/pen/wWMKmo
+* Wolf gif created by https://www.deviantart.com/cherrysapphire/art/Wolf-Walk-Cycle-Animation-418153762
 
 ## License
 

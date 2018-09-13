@@ -19,7 +19,7 @@ function nav_pets($atts) {
   <div class="nav-pets-bar"></div>
   <div class="nav-pets-rail">
     <a href="<?php echo $data['home_link']; ?>">
-      <img class="nav-pets-logo" src="https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/logo2.png" alt="company logo" />
+      <img class="nav-pets-logo" src="http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/09/logo2.png" alt="company logo" />
     </a>
     <div class="nav-pets-mobile-contact-flex">
       <div>
@@ -60,8 +60,8 @@ function nav_pets($atts) {
       <div class="nav-pets-fullscreen-cat-flex">
         <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); // Display the user-defined menu in Appearance > Menus ?>
         <div id="nav-pets-cat-image-container">
-          <img id="nav-pets-cat-looking-up" src="https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/navcat1.png" alt="cat looking up"/>
-          <img id="nav-pets-cat-looking-down" src="https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/navcat2.png" alt="cat looking down"/>
+          <img id="nav-pets-cat-looking-up" src="http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/09/navcat1.png" alt="cat looking up"/>
+          <img id="nav-pets-cat-looking-down" src="http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/09/navcat2.png" alt="cat looking down"/>
         </div>
       </div>
     </div>

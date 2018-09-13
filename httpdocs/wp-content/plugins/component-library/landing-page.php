@@ -43,5 +43,6 @@ require( dirname( __FILE__ ) . '/nav-symmetric/nav-symmetric.php');
 require( dirname( __FILE__ ) . '/nav-pets/nav-pets.php');
 require( dirname( __FILE__ ) . '/blog-three/blog-three.php');
 require( dirname( __FILE__ ) . '/promo-modal/promo-modal.php');
+require( dirname( __FILE__ ) . '/masthead-parallax/masthead-parallax.php');
 
 ?>

@@ -25,7 +25,7 @@ Version: 0.1
       <div class="ribbon-shadow"></div>
       <div class="action-grid">
         <div class="action-grid-icon-flex">
-          <img class="action-grid-icon" src="https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/heart.png" alt="heart icon" />
+          <img class="action-grid-icon" src="http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/09/heart.png" alt="heart icon" />
         </div>
         <div class="action-grid-text">
           <h2><?php echo $data['action_header1']; ?></h2>
@@ -35,7 +35,7 @@ Version: 0.1
       </div>
       <div class=action-grid>
         <div class="action-grid-icon-flex">
-          <img class="action-grid-icon" src="https://componentlibrary.000webhostapp.com/wp-content/uploads/2018/09/registration.png" alt="pencil and paper icon" />
+          <img class="action-grid-icon" src="http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/09/registration.png" alt="pencil and paper icon" />
         </div>
         <div class="action-grid-text">
           <h2><?php echo $data['action_header2']; ?></h2>
