@@ -11,12 +11,12 @@ Version: 0.1
   		'menu_title1' => 'Contact Us',
   		'menu_title2' => 'Our Services',
   		'menu_title3' => 'Make Appointment',
-  		'menu_img1' => 'http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/08/contact.jpg',
-  		'menu_img2' => 'http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/08/services.jpg',
-  		'menu_img3' => 'http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/08/appointment.jpg',
+  		'menu_img1' => 'http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/09/contact.jpg',
+  		'menu_img2' => 'http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/09/services.jpg',
+  		'menu_img3' => 'http://componentlibrary.blogdrop.eu/wp-content/uploads/2018/09/appointment.jpg',
   		'menu_link1' => '#',
   		'menu_link2' => '#',
-  		'menu_link3' => '#'
+  		'menu_link3' => '#',
   	), $atts);
 ?>
   <div class="menu-fade-container">

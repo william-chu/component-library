@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+/* Component Styles */
+.nav-hours-container {
+  background: #4a6181;
+  padding: 20px 0;
+  position: relative;
+  transition: .5s;
+  border-bottom: 2px solid #039dec;
+  border-top: 2px solid #039dec;
+}
+.nav-hours-rail {
+  padding: 0 20px;
+  max-width: 1080px;
+  display: block;
+  margin: auto;
+  z-index: 20;
+  position: relative;
+}
+@media (min-width: 1080px) {
+  .nav-hours-rail {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+.nav-hours-logo {
+  width: 180px;
+  display: block;
+  margin: 0 auto;
+  transition: .5s;
+}
+@media (min-width: 1080px) {
+  .nav-hours-logo {
+    width: 300px;
+    margin-top: 25px;
+    margin-left: -50px;
+  }
+}
+.nav-hours-menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  color: #36404d;
+  font-size: 1.3rem;
+  background: #fff;
+  border-radius: 50%;
+}
+.nav-hours-menu-button:hover {
+  background: rgba(255,255,255,.5);
+}
+.nav-hours-menu-button i {
+  transition: .5s;
+}
+.nav-hours-menu-button:hover > i {
+  opacity: .3;
+}
+.nav-hours-fullscreen {
+  display: none;
+}
+#nav-hours-menu-button {
+  opacity: 1;
+  transition: .3s;
+}
+@media (min-width: 1080px) {
+  .nav-hours-fullscreen {
+    display: block;
+    padding-left: 20px;
+    width: 100%;
+  }
+  #nav-hours-menu-button {
+    opacity: 0;
+  }
+}
+/* Mobile nav styling */
+.nav-hours-mobile-contact-flex {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: .9rem;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (min-width: 1080px) {
+  .nav-hours-mobile-contact-flex {
+    display: none;
+  }
+}
+.nav-hours-mobile-contact-flex div {
+  padding: 5px 0;
+}
+.nav-hours-mobile-contact-flex a {
+  text-decoration: none;
+}
+.nav-hours-mobile-contact-flex a div {
+  transition: .5s;
+  color: #fff;
+}
+.nav-hours-mobile-contact-flex a:hover > div {
+  color: #039dec;
+}
+.nav-hours-mobile ul, .nav-hours-fullscreen ul {
+  list-style: none;
+}
+.nav-hours-mobile ul.menu {
+  color: #6282a3;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+.nav-hours-mobile .menu-item-has-children a {
+  color: #6282a3;
+  text-decoration: none;
+}
+.nav-hours-mobile ul.menu li {
+  padding-top: 15px;
+}
+.nav-hours-mobile .sub-menu {
+  white-space: nowrap;
+  transition: .5s;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: .9rem;
+  text-align: left;
+  letter-spacing: normal;
+  text-transform: none;
+  padding-left: 10px;
+}
+.nav-hours-mobile .sub-menu a {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 10px;
+}
+.nav-hours-mobile .sub-menu a {
+  transition: .5s;
+}
+.nav-hours-mobile .sub-menu a:hover {
+  color: #039dec;
+}
+.nav-hours-mobile ul.menu .sub-menu li {
+  padding: 5px 0;
+}
+.nav-hours-mobile-hours-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;
+  margin: auto;
+}
+.nav-hours-mobile-hours-flex p {
+  margin: 0;
+  font-family: 'Roboto Mono', sans-serif;
+  color: #3c3c3c;
+  background: #fff;
+  width: 100%;
+  text-align: center;
+}
+.nav-hours-mobile-hours-flex p:nth-child(odd) {
+  background: #d5eaff;
+}
+@media (min-width: 1080px) {
+  .nav-hours-mobile-hours-flex {
+    display: none;
+  }
+}
+/* Fullscreen nav styling */
+.nav-hours-fullscreen-contact-flex {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Montserrat', sans-serif;
+  color: #4a6181;
+  font-size: 1.1rem;
+  background-color: #fff;
+  padding: 5px 10px;
+}
+.nav-hours-fullscreen-contact-flex a div {
+  transition: .5s;
+}
+.nav-hours-fullscreen-contact-flex a:hover > div {
+  color: #039dec;
+}
+.nav-hours-fullscreen .nav-hours-fullscreen-contact-flex a {
+  padding: 0;
+  color: #4a6181;
+}
+.nav-hours-fullscreen ul.menu {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0 0;
+  color: #fff;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+.nav-hours-fullscreen a {
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  padding: 5px 10px 20px;
+  cursor: pointer;
+}
+.nav-hours-fullscreen .menu-item-has-children {
+  position: relative;
+}
+.nav-hours-fullscreen .sub-menu {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  position: absolute;
+  top: 40px;
+  background: #fff;
+  padding: 0;
+  z-index: 10;
+  transition: .5s;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: .9rem;
+  text-align: left;
+  letter-spacing: normal;
+  visibility: hidden;
+  text-transform: none;
+}
+.nav-hours-fullscreen .sub-menu a {
+  transition: .5s;
+  color: #2b2b2b;
+  padding: 5px 10px;
+}
+.nav-hours-fullscreen .sub-menu a:hover {
+  color: #039dec;
+}
+.nav-hours-fullscreen .menu-item-has-children:hover > .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.nav-hours-fullscreen ul.menu .sub-menu li {
+  padding: 5px 0;
+}
+.nav-hours-fullscreen-hours-flex {
+  display: flex;
+  background: #fff;
+  justify-content: space-around;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #3c3c3c;
+  font-size: 1.3rem;
+  margin-top: 15px;
+}
+.nav-hours-fullscreen-day-flex:nth-child(even) {
+  background: #d5eaff;
+}
+.nav-hours-fullscreen-hours-flex p:first-of-type {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.nav-hours-fullscreen-hours-flex p {
+  margin: 0;
+}
+.nav-hours-fullscreen-day-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+}
+/* Chart Modal Styling*/
+  /* Modal Background */
+  .nav-hours-modal {
+    position: fixed;
+    box-sizing: border-box;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    overflow-y: scroll;
+    transition: .5s;
+    background-color: rgba(0,0,0,0.90);
+  }
+  /* Modal Content */
+  .nav-hours-modal-content {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+  /* The Close Button */
+  #nav-hours-close-button {
+    color: red;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px 0 0;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  #nav-hours-close-button:hover,
+  #nav-hours-close-button:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
+/* Site Specific Styles */

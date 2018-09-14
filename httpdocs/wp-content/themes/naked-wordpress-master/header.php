@@ -48,6 +48,8 @@
 		echo do_shortcode('[nav_symmetric]');
 	} else if (is_page('green-theme') || is_page('nav-pets')) {
 		echo do_shortcode('[nav_pets]');
+	} else if (is_page('purple-theme') || is_page('nav-hours')) {
+		echo do_shortcode('[nav_hours]');
 	} else {
 		?>
 		<div>
@@ -65,6 +67,7 @@
 					<option value="http://componentlibrary.blogdrop.eu/blog-scroll/">Blog Scroll</option>
 					<option value="http://componentlibrary.blogdrop.eu/blog-three/">Blog Three</option>
 					<option value="http://componentlibrary.blogdrop.eu/footer-menu/">Footer Menu</option>
+					<option value="http://componentlibrary.blogdrop.eu/nav-hours/">Nav Hours</option>
 					<option value="http://componentlibrary.blogdrop.eu/nav-pets/">Nav Pets</option>
 					<option value="http://componentlibrary.blogdrop.eu/nav-symmetric/">Nav Symmetric</option>
 					<option value="http://componentlibrary.blogdrop.eu/location-grid/">Location Grid</option>
