@@ -4,21 +4,25 @@ document.addEventListener("DOMContentLoaded", function() {
   const navPetsMenuBtn = document.getElementById('nav-pets-menu-button');
   let navPetsModalDisplayed = false;
   // When the user clicks on the button, open or close the modal, prevent scrolling of background
-  navPetsMenuBtn.onclick = function() {
-    if (navPetsModalDisplayed === true) {
-      navPetsModalDisplayed = false;
-      navPetsModal.style.width = "0";
-      $('html').css('overflow','auto');
-    } else {
-      navPetsModalDisplayed = true;
-      navPetsModal.style.width = "75%";
-      $('html').css('overflow','hidden');
+  if (navPetsMenuBtn !== null) {
+    navPetsMenuBtn.onclick = function() {
+      if (navPetsModalDisplayed === true) {
+        navPetsModalDisplayed = false;
+        navPetsModal.style.width = "0";
+        $('html').css('overflow','auto');
+      } else {
+        navPetsModalDisplayed = true;
+        navPetsModal.style.width = "75%";
+        $('html').css('overflow','hidden');
+      }
     }
   }
   // Close modal on window resize
   window.addEventListener("resize", function() {
     navPetsModalDisplayed = false;
-    navPetsModal.style.width = "0";
+    if (navPetsModal !== null) {
+      navPetsModal.style.width = "0";
+    }
     $('html').css('overflow','auto');
   });
 
