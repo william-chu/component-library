@@ -16,7 +16,7 @@ function footer_menu($atts) {
     'hospital_zip' => '97204',
     'hospital_phone' => '123.456.7890',
     'hospital_fax' => '123.456.7890',
-    'hospital_statement' => 'If you’re new to the area, recently welcomed a new four-legged member to your family or are just searching for an experienced vet that will provide you and your loved one with the respect and compassion you both deserve, we invite you to come by and give us a try.',
+    'hospital_statement' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     'hospital_statement_link' => '#',
     'hospital_newsletter_link' => '#',
     'yelp_link' => '#',
