@@ -6,10 +6,6 @@
 
 A library of responsively styled components for WordPress created with PHP, JS and jQuery.
 
-## Setup/Instructions
-
-* To view project, go to http://componentlibrary.blogdrop.eu/
-
 ## Media Attribution
 
 * Icons from https://icons8.com https://www.flaticon.com/ and https://fontawesome.com/
